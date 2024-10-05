@@ -1,0 +1,177 @@
+body {
+  margin: 0px;
+  height: 100vh;
+  background-image: url(../Images/plane.jpg);
+}
+
+#wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+#container_top {
+  display: flex;
+  width: 100%;
+  height: 20%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  width: 50%;
+  /*background-color: aqua;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  width: 50%;
+  /*background-color: aqua;*/
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height:100%;
+}
+
+.button {
+  color: white; 
+  width: 80px;
+  height: 80px;
+  background-color: black;
+  border-radius: 50%; 
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  align-items:center;
+}
+
+#container_center {
+  display: flex;
+  width: 100%;
+  height: 60%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+aside {
+  width: 50%;
+  height: 100%;
+  /*background-color: aquamarine;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main {
+  width: 70%;
+  height: 100%;
+  /*background-color: bisque;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+aside h1 {
+  font-size: 100px;
+  color: #333;
+  margin-bottom: 200px;
+}
+
+main h2{
+    margin-top: 200px;
+    font-size: 60px;
+    color: #333;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+footer {
+  width: 100%;
+  height: 20%;
+  /*background-color: #333; */
+  color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+}
+
+#about{
+    margin-left: 5%;
+    margin-top: 7%; 
+    width: 10%; 
+    height: 25%; 
+    background-color: gray ;
+    border-radius: 20%;
+}
+
+#info{
+    margin-left: 20px;
+    margin-top: 7%; 
+    width: 10%; 
+    height: 25%; 
+    background-color: gray ;
+    border-radius: 20%;
+}
+
+@media (max-width:1000px){
+    aside h1 {
+        font-size: 100px;
+    }
+    main h2{
+        font-size: 70px;
+        margin-left: 20px;
+    }
+    footer{
+        justify-content: center; 
+    }
+    #about{
+        width: 20%;
+        height: 40%;
+    }
+    #info{
+        width: 20%;
+        height: 40%;
+    }
+}
+
+@media (max-width:600px){
+    #container_center{
+        flex-direction: column;
+    }
+    aside {
+        width: 100%;
+        height: auto;
+    }
+    aside h1{
+        margin-bottom:20px;
+    }
+    main{
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    main{
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    main h2{
+        font-size:40px;
+        margin-top: 20px;
+    }
+    footer {
+        flex-direction:column;
+        align-items: center;
+    }
+    #about, #info{
+        width: 80%;
+        margin: 10px 0;
+    }
+}
